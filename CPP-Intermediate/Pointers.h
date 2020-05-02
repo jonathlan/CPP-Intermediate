@@ -2,6 +2,6 @@
 class Pointers
 {
 public:
-	int Excecute();
+	int Basics();
 };
 

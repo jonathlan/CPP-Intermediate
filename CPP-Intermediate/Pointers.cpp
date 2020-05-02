@@ -1,7 +1,7 @@
 #include "Pointers.h"
 #include <iostream>
 
-int Pointers::Excecute()
+int Pointers::Basics()
 {
 	int num = 3;
 
