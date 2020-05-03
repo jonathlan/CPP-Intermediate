@@ -1,6 +1,11 @@
 #include "Pointers.h"
 #include <iostream>
 
+Pointers::~Pointers()
+{
+	std::cout << "Pointers destructor called" << std::endl;
+}
+
 int Pointers::basics()
 {
 	std::cout << "*********************" << std::endl;

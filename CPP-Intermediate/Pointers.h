@@ -2,6 +2,7 @@
 class Pointers
 {
 public:
+	~Pointers();
 	int basics();
 	int referenceTypes();
 	int memoryManagement();
