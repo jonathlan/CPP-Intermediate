@@ -19,6 +19,7 @@ int main()
     Pointers *pPointer = &Pointer;
     pPointer->Basics();
 
+    Pointer.ReferenceTypes();
 
     std::cout << "Hello World!\n";
 }
