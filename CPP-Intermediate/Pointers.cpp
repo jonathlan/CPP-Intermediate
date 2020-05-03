@@ -135,10 +135,13 @@ int Pointers::memoryManagement()
 	// Store the value 5.0 in the memory location assigned to pDouble
 	*pDouble = 5.0;
 
-	std::cout << "pInt contains:" << *pInt << " and pDouble:" << *pDouble << std::endl; // 5
-	/*  During design time the memory assigned to both is the same, 4 Bytes depending on the computer
-	  When the code is excecuted, the computer will assign the proper memory size. 4B for inr and 8B for double.
+	std::cout << "pInt contains:" << *pInt << " and pDouble:" << *pDouble << std::endl; // pInt contains:3 and pDouble:5
+	/*  During design time the memory assigned to both is the same, 8 Bytes in my x64 computer
+	  When the code is excecuted, the computer will assign the proper memory size. In this case 3B for int and 5B for double.
 	*/
+
+	std::cout << "Size of pInt:" << sizeof(pInt) << " size of *pInt:" << *pInt << std::endl; // Size of pInt:8 size of *pInt:3
+	std::cout << "Size of pDouble:" << sizeof(pDouble) << " size of *pDouble:" << *pDouble << std::endl; // Size of pDouble:8 size of *pDouble:5
 
 	/*  RELEASING MEMORY (DELLOCATION)
 	  Each time you allocate memory for the application, the OS reserves it
