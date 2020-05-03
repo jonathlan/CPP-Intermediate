@@ -22,6 +22,7 @@ int Pointers::basics()
 
 	// This will print the memory address of the variable num, not the actual value "3"
 	std::cout << "Pointer Num:" << pNum << std::endl; // 000000C78CB7F574
+	std::cout << "Address of num:" << &num << std::endl; // 000000C78CB7F574
 
 	/* THE DEREFERENCE OPERATOR
 	  Dereference operator is the same as the pointer one, the star: *
@@ -106,6 +107,48 @@ int Pointers::passByRef(int &num1)
 	std::cout << "passByRef()" << num1 << std::endl; // 6
 	num1++;
 	std::cout << "passByRef()->" << num1 << std::endl; // 7
+
+	return 0;
+}
+
+int Pointers::memoryManagement()
+{
+	std::cout << "*********************" << std::endl;
+	std::cout << "**MEMORY MANAGEMENT**" << std::endl;
+	std::cout << "*********************" << std::endl;
+
+	/*  ALLOCATING MEMORY
+	  Memory allocation during runtime is very common. 
+	  For example you might not know how many objects you will need until runtime.
+	  In order to allocate memory dinamically for the pointers you can use the keyword "new"
+	*/
+
+	// Pointer to int and allocate some space to it
+	int* pInt = new int;
+
+	// Pointer to double and allocate some space to it
+	double* pDouble = new double;
+
+	// Store the value 3 in the memory location assigned to pInt
+	*pInt = 3;
+
+	// Store the value 5.0 in the memory location assigned to pDouble
+	*pDouble = 5.0;
+
+	std::cout << "pInt contains:" << *pInt << " and pDouble:" << *pDouble << std::endl; // 5
+	/*  During design time the memory assigned to both is the same, 4 Bytes depending on the computer
+	  When the code is excecuted, the computer will assign the proper memory size. 4B for inr and 8B for double.
+	*/
+
+	/*  RELEASING MEMORY (DELLOCATION)
+	  Each time you allocate memory for the application, the OS reserves it
+	  so other applications cannot use it, but if you don't realease it then
+	  it leads to security issues and errant application behaviours. AKA memory leaks.
+	  Use the keyword "delete" to realease allocated memory for each "new" keyword in the application.
+	*/
+
+	delete pInt;
+	delete pDouble;
 
 	return 0;
 }

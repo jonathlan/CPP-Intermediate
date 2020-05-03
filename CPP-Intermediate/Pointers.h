@@ -4,6 +4,7 @@ class Pointers
 public:
 	int basics();
 	int referenceTypes();
+	int memoryManagement();
 
 private:
 	int passByValue(int num1);
