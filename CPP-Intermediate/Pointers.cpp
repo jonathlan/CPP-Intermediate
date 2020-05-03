@@ -160,3 +160,18 @@ int Pointers::memoryManagement()
 
 	return 0;
 }
+
+Person::Person(int age)
+{
+	_age = age;
+}
+
+int Person::get_Age()
+{
+	return _age;
+}
+
+void Person::set_Age(int age)
+{
+	_age = age;
+}

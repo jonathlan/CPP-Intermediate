@@ -12,3 +12,13 @@ private:
 	int passByRef(int &num1); // can also be declared as: int passByRef(int &);
 };
 
+class Person
+{
+private:
+	int _age;
+public:
+	
+	Person(int age);
+	int get_Age();
+	void set_Age(int age);
+};
