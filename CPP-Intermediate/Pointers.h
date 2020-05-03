@@ -2,8 +2,8 @@
 class Pointers
 {
 public:
-	int Basics();
-	int ReferenceTypes();
+	int basics();
+	int referenceTypes();
 
 private:
 	int passByValue(int num1);

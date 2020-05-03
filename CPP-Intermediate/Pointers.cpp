@@ -1,7 +1,7 @@
 #include "Pointers.h"
 #include <iostream>
 
-int Pointers::Basics()
+int Pointers::basics()
 {
 	std::cout << "*********************" << std::endl;
 	std::cout << "***POINTER BASICS****" << std::endl;
@@ -53,7 +53,7 @@ int Pointers::Basics()
 	return 0;
 }
 
-int Pointers::ReferenceTypes()
+int Pointers::referenceTypes()
 {
 	std::cout << "*********************" << std::endl;
 	std::cout << "***REFERENCE TYPES***" << std::endl;
