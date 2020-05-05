@@ -30,6 +30,15 @@ public:
 	*/
 	~Person();
 
-	void SayHello();
+	void SetFirstName(std::string fName);
+	std::string GetFirstName();
+
+	void SetLastName(std::string lName);
 	std::string GetLastName();
+
+	void SetAge(int age);
+	int GetAge();
+
+	void SayHello();
+	
 };
