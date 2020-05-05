@@ -1,15 +1,18 @@
 // CPP-Classes.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include <iostream>
-#include "Math.h"
+#include "math.h"
+#include <cmath>
 #include "Person.h"
 
 using namespace std;
+//Again below statement will save us some typing.
+using namespace MyNS;
 
 int main()
 {
     cout << "STATIC CLASS" << endl;
-    int result = math::pow(1    , 10);
+    int result = MyNS::math::pow(1    , 10);
     cout << result << endl;
 
     cout << "USING CONSTRUCTORS" << endl;
@@ -50,6 +53,17 @@ int main()
 
     // this line will not work because firstName is private
     //p.firstName = "Gerry";
+
+    cout << "NAMESPACES" << endl;
+
+    // pow function is already present in the math class from C
+    cout << "2 to the power of 4:" << pow(2, 4) << endl;
+
+    // However using namespaces we can call another function with the same name implemented by us
+    cout << "My power implementation. 2 to the power of 4:" << MyNS::math::pow(2, 4) << endl;
+
+    // Because we have added the "using namespace MyNS;" statement we can also do this
+    cout << "Now using the namespace. 2 to the power of 4:" << math::pow(2, 4) << endl;
 
     return 0;
 }

@@ -1,7 +1,9 @@
-#include "Math.h"
+#include "math.h"
+#include <iostream>
 
-int math::pow(int base, int exp)
+int MyNS::math::pow(int base, int exp)
 {
+    std::cout << "Inside My pow implementation" << std::endl;
     int result = 1;
 
     for (int i = 0; i < exp; i++)
