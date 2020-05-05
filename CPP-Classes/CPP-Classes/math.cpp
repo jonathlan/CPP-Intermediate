@@ -1,6 +1,6 @@
 #include "Math.h"
 
-int Math::pow(int base, int exp)
+int math::pow(int base, int exp)
 {
     int result = 1;
 

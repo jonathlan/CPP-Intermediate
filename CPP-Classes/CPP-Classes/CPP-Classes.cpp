@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     cout << "STATIC CLASS" << endl;
-    int result = Math::pow(1    , 10);
+    int result = math::pow(1    , 10);
     cout << result << endl;
 
     cout << "USING CONSTRUCTORS" << endl;
