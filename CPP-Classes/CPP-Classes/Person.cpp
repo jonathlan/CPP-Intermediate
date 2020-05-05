@@ -25,6 +25,7 @@ Person::~Person()
 
 void Person::SayHello()
 {
+    std::cout << "Hello" << std::endl;
 }
 
 std::string Person::GetLastName()

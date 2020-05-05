@@ -23,6 +23,20 @@ int main()
     //For accessing members of the class you have to use the arrow operator
     cout << pTwo->GetLastName() << endl;
 
+    // Another way to create the object is to simply declare the variable as such
+    Person p;
+
+    // We can also create a reference to that very same object:
+    Person& pRef = p;
+    
+    // However in this case we will not use the arrow (->) to access it's members
+    // instead we will use the dot member selection operator
+
+    p.SayHello();
+
+    // Which also works with pRef because it's an alias of p
+    pRef.SayHello();
+
     delete pOne, pTwo, pThree;
 
     return 0;
