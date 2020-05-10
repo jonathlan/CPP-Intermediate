@@ -1,6 +1,14 @@
 #include "Student.h"
 #include <regex>
 
+Student::Student()
+{
+}
+
+Student::~Student()
+{
+}
+
 string Student::get_firstname()
 {
 	return this->firstName;
@@ -8,10 +16,10 @@ string Student::get_firstname()
 
 void Student::set_firstname(string fname)
 {
-	if (!fname.empty() and !fname.compare(NULL))
+	if (!fname.empty())
 		this->firstName = fname;
 	else
-		cout << "Enter a valid value";
+		cout << "Enter a valid value" << endl;
 }
 
 string Student::get_lastname()
@@ -21,10 +29,10 @@ string Student::get_lastname()
 
 void Student::set_lastname(string lname)
 {
-	if (!lname.empty() and !lname.compare(NULL))
+	if (!lname.empty())
 		this->lastName = lname;
 	else
-		cout << "Enter a valid value";
+		cout << "Enter a valid value" << endl;
 }
 
 int Student::get_age()
@@ -37,7 +45,7 @@ void Student::set_age(int age)
 	if (age > 0)
 		this->age = age;
 	else
-		cout << "Enter a valid value";
+		cout << "Enter a valid value" << endl;
 }
 
 string Student::get_address()
@@ -47,10 +55,10 @@ string Student::get_address()
 
 void Student::set_address(string add)
 {
-	if (!add.empty() and !add.compare(NULL))
+	if (!add.empty())
 		this->address = add;
 	else
-		cout << "Enter a valid value";
+		cout << "Enter a valid value" << endl;
 }
 
 string Student::get_city()
@@ -60,10 +68,10 @@ string Student::get_city()
 
 void Student::set_city(string city)
 {
-	if (!city.empty() and !city.compare(NULL))
+	if (!city.empty())
 		this->city = city;
 	else
-		cout << "Enter a valid value";
+		cout << "Enter a valid value" << endl;
 }
 
 string Student::get_phone()
@@ -74,11 +82,12 @@ string Student::get_phone()
 void Student::set_phone(string phone)
 {
 	std::regex r("[[:digit:]]{2}-[[:digit:]]{3}-[[:digit:]]{4}");
+	//ex. 55-328-0183
 	regex* reg = new regex();
 	
 	
 	if (std::regex_match(phone, r))
 		this->phone = phone;
 	else
-		cout << "Enter a valid value";
+		cout << "Enter a valid value" << endl;
 }

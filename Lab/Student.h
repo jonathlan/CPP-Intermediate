@@ -10,8 +10,10 @@ private:
 	int age = 0;
 	string address = "";
 	string city = "";
-	string phone = 0;
+	string phone = "";
 public:
+	Student();
+	~Student();
 	string get_firstname();
 	void set_firstname(string fname);
 	string get_lastname();
