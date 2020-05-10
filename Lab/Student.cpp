@@ -101,3 +101,8 @@ void Student::set_phone(string phone)
 	else
 		cout << "Enter a valid value" << endl;
 }
+
+void Student::SitInClass()
+{
+	cout << "Sitting in main theater" << endl;
+}

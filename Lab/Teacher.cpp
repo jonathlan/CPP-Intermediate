@@ -101,3 +101,13 @@ void Teacher::set_phone(string phone)
 	else
 		cout << "Enter a valid value" << endl;
 }
+
+void Teacher::GradeStudent()
+{
+	cout << "Student graded" << endl;
+}
+
+void Teacher::SitInClass()
+{
+	cout << "Sitting at front of class" << endl;
+}

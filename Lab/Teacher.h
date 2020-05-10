@@ -27,5 +27,7 @@ public:
 	void set_city(string city);
 	string get_phone();
 	void set_phone(string phone);
+	void GradeStudent();
+	void SitInClass();
 };
 
