@@ -5,6 +5,16 @@ Teacher::Teacher()
 {
 }
 
+Teacher::Teacher(string fname, string lname, int age, string address, string city, string phone)
+{
+	set_firstname(fname);
+	set_lastname(lname);
+	set_age(age);
+	set_address(address);
+	set_city(city);
+	set_phone(phone);
+}
+
 Teacher::~Teacher()
 {
 }

@@ -13,6 +13,7 @@ private:
 	string phone = "";
 public:
 	Teacher();
+	Teacher(string fname, string lname, int age, string address, string city, string phone);
 	~Teacher();
 	string get_firstname();
 	void set_firstname(string fname);
