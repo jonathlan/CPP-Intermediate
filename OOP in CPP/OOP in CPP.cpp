@@ -27,4 +27,9 @@ int main()
     Student s3("Tom", "Bradley", 35, "Physics");
     s3.sayHello();
     s3.displayCourseName();
+
+    // Demonstrate the access to a protected field in base class directly from derived class
+    s3.howOldAmI();
+    s3.updateAge(34);
+    std::cout << s3.getFirstName() << "'s updated age is " << s3.getAge() << std::endl;
 }

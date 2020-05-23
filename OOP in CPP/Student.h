@@ -14,5 +14,7 @@ public:
 	~Student();
 
 	void displayCourseName() const;
+	void howOldAmI();
+	void updateAge(int newage);
 };
 

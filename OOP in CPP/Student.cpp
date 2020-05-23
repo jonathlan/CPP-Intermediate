@@ -26,3 +26,17 @@ void Student::displayCourseName() const
 {
 	std::cout << "My course is: " << course << std::endl;
 }
+
+// Because age is a protected field we can also access it from Student class
+void Student::howOldAmI()
+{
+	std::cout << "I am " << age << " years old." << std::endl;
+}
+
+// Because age is a protected field we can even change it from Student class
+void Student::updateAge(int newAge)
+{
+	age = newAge;
+}
+
+
