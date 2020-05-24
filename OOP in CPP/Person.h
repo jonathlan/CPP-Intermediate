@@ -29,4 +29,10 @@ public:
 
 	void sayHello() const;
 
+	/* Friend function
+		This allows to access any memebers (Public and private) on the class.
+		Consider that friend functions are not members of the class
+	*/
+	friend void someExternalFunction(Person& targetObject);
+
 };

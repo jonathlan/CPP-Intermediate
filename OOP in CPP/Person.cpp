@@ -63,3 +63,12 @@ void Person::sayHello() const
 {
     std::cout << "Hello from Person Class, my name is: " << firstName << std::endl;
 }
+
+/* Friend function
+    This functions has access to all the members of the target object, public and private.
+    Notice that this is not prefixed with the "ClassName::" syntax, because this is not a member of the class.
+*/
+void someExternalFunction(Person& targetObject)
+{
+    // Access any member of the class either public private or protected.
+}
