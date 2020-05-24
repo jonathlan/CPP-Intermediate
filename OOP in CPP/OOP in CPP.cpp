@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Person.h"
 #include "Student.h"
+#include "Handle.h"
 
 
 int main()
@@ -32,4 +33,9 @@ int main()
     s3.howOldAmI();
     s3.updateAge(34);
     std::cout << s3.getFirstName() << "'s updated age is " << s3.getAge() << std::endl;
+
+    // Friend classes
+    // Handle is a friend of Body class
+    Handle h;
+    h.someOperationOnBodyClass(); // This function will access a private field in Body Class
 }

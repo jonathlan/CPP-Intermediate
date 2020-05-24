@@ -147,11 +147,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Handle.cpp" />
     <ClCompile Include="OOP in CPP.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Body.h" />
+    <ClInclude Include="Handle.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>
